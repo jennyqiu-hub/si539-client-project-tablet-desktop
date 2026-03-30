@@ -1,0 +1,475 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f7fa;
+  color: #111;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  color: #00274c;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin: 1rem 0 0.75rem 0;
+  color: #00274c;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin: 0 0 0.5rem 0;
+  color: #00274c;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+ul,
+ol {
+  margin: 0 0 1rem 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+section {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+iframe {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+}
+
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background-color: white;
+  color: #00274c;
+  padding: 0.75rem 1rem;
+  border: 3px solid #00274c;
+  text-decoration: none;
+    z-index: 1000;
+}
+
+
+
+/* Header */
+header {
+  background-color: #00274c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+header img {
+  width: 90px;
+  margin: 0 auto 1rem;
+}
+
+
+
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+nav li {
+  width: 100%;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #00274c;
+  font-weight: 700;
+  padding: 0.9rem 1rem;
+  border: 2px solid #c7d2e0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+nav a.active {
+  background-color: #eaf2fb;
+  color: #00274c;
+  border-left: 6px solid #0056b3;
+  border-color: #9fb9d9;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 800;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #ffcb05;
+  border-color: #7fa6cf;
+  outline: 2px solid #7fa6cf;
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+
+
+
+
+/* Main */
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+section {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  color: #00274c;
+}
+
+
+
+/* Links */
+a {
+  color: #0056b3;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Footer */
+footer {
+  background-color: #00274c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: #ffcb05;
+}
+
+
+
+/* Grid use on homepage */
+.home-links ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.home-links li {
+  margin: 0;
+}
+
+.home-links a {
+  display: block;
+  background-color: #f8f9fb;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #00274c;
+  text-align: center;
+}
+
+.home-links img {
+  margin-bottom: 1.25rem;
+  border-radius: 8px;
+}
+
+.home-links ul {
+  gap: 1rem;
+}
+
+.home-links a {
+  padding: 1.25rem;
+}
+
+
+
+
+/* Grid use on interview page */
+.interview-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.interview-grid section {
+  margin-bottom: 0;
+  background-color: #f8f9fb;
+  border: 1px solid #d0d7de;
+}
+
+.resource-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.resource-grid li {
+  background-color: #f8f9fb;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0;
+}
+
+.resource-grid a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #00274c;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.resource-grid a:hover,
+.resource-grid a:focus {
+  text-decoration: underline;
+}
+
+.link-button {
+  display: inline-block;
+  background-color: #ffcb05;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+}
+
+.link-button:hover,
+.link-button:focus {
+  background-color: #ddb208;
+  text-decoration: none;
+}
+
+
+
+/* Grid use on resume intro page */
+.resume-intro {
+  display: grid;
+  gap: 1rem;
+}
+.resume-intro img {
+  width: 100%;
+  aspect-ratio: 4 / 4;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* Grid use on network page */
+.network-steps {
+  display: grid;
+  gap: 1rem;
+}
+
+
+/*error page grid */
+.error-page {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.5rem;
+}
+.quick-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.quick-buttons button {
+  padding: 0.75rem;
+  border: 2px solid #00274c;
+  border-radius: 8px;
+  background-color: #ffcb05;
+  color: #00274c;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+/*challenge for F&Q section */
+details {
+  background-color: #f8f9fb;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #00274c;
+}
+
+details p {
+  margin-top: 0.75rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    text-align: left;
+  }
+
+  header img {
+    width: 100px;
+    margin: 0;
+  }
+
+  nav {
+    flex-grow: 1;
+    margin-left: 2rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+  }
+
+  nav li {
+    width: auto;
+    flex: 0 0 auto;
+  }
+
+  main {
+    width: 92%;
+    max-width: 1200px;
+    padding: 1.5rem 0;
+  }
+
+  section {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .home-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .home-links h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 0.5rem;
+  }
+
+  .home-links > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .home-links img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .home-links ul,
+  .resource-grid ul,
+  .interview-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .network-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .resume-intro {
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  .resume-intro section {
+    min-height: 475px;
+  }
+
+  .error-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  iframe {
+    min-height: 400px;
+  }
+
+  summary {
+    padding: 1.1rem 1.5rem;
+  }
+
+  details p {
+    padding: 0 1.5rem 1.1rem 1.5rem;
+  }
+
+  footer {
+    padding: 1.25rem;
+  }
+}
+/* Layout approach inspired by [MIT website]. Adapted and rewritten by me. */
+/* GenAI disclosure: I used ChatGPT to review my final version for layout, responsiveness, and accessibility issues. I wrote and revised the HTML/CSS myself. */

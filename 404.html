@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>404 | UMSI Career Development Resource Hub</title>
+</head>
+<body>
+  <header>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="University of Michigan School of Information">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resumes</a></li>
+        <li><a href="network.html">Networking & Building Connections</a></li>
+        <li><a href="interview.html">Interviews</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main id="main-content">
+<section class="error-page">
+  <div>
+    <h1>404: Page Not Found</h1>
+    <p>Sorry, the page you are looking for does not exist, may have moved, or the link may be broken.</p>
+    <p>Let’s get you back on track.</p>
+
+    <a href="index.html" class="link-button">Return to Home</a>
+
+    <div class="error-links">
+      <h2>Helpful Links</h2>
+      <ul>
+        <li><a href="resume.html">Resume Support</a></li>
+        <li><a href="network.html">Networking & Building Connections</a></li>
+        <li><a href="interview.html">Interview Support</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <img src="images/404-picture.jpg" alt="Illustration representing a missing page">
+  </div>
+</section>
+</main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> University of Michigan School of Information |
+      <a href="https://sites.google.com/umich.edu/umsi-cdo/student-resources" target="_blank" rel="noopener noreferrer">UMSI Career Development Office</a>
+    </p>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById("current-year");
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
